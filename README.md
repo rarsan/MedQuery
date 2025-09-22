@@ -1,10 +1,12 @@
-### Introduction: A Multimodal RAG Pipeline for Biomedical Research
+## MedQuery - A Biomedical AI Research Assistant using Gemini & BigQuery
 
-The biomedical semantic search project, centered on the "nutrition and well-being" subset of the PMC Open Access dataset, is an exceptional showcase for the power of BigQuery's generative AI and multimodal capabilities. The magic of this approach lies in its ability to move beyond archaic keyword matching and into the realm of true conceptual understanding.
+The biomedical semantic search project, centered on the "nutrition and well-being" subset of the PMC Open Access dataset, is an exceptional showcase for the power of BigQuery's generative AI and multimodal capabilities.
+
+![Architecture Diagram](assets/arch_diagram.png)
 
 By building a Retrieval-Augmented Generation (RAG) pipeline, your project will transform a simple search engine into a dynamic knowledge synthesis tool. Instead of just listing articles that contain a few keywords, it will find content based on semantic meaning and then synthesize the information into a concise, easy-to-understand answer. This is fundamentally different from a traditional system like PubMed, which is primarily based on keyword matching and Boolean logic.
 
-This project serves as a comprehensive blueprint that touches on all three pillars of the BigQuery AI Hackathon:
+This project serves as a comprehensive blueprint that touches on all three pillars of the [BigQuery AI Hackathon](https://www.kaggle.com/competitions/bigquery-ai-hackathon/overview/):
 
 1.  **The Multimodal Pioneer 🖼️**: We begin by treating entire PDF pages as images, creating a structured interface over unstructured files in Cloud Storage (similar to **Object Tables**). This allows us to work with visual data natively within the BigQuery ecosystem.
 
