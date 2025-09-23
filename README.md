@@ -14,6 +14,7 @@ MedQuery directly addresses this by providing a comprehensive multimodal semanti
 
 ### AI Assistant (Streamlit App)
 
+[![Use Case Demo](https://img.youtube.com/vi/v3UqB2KVb-M/0.jpg)](https://www.youtube.com/watch?v=v3UqB2KVb-M)
 ![Use Case Demo](https://storage.googleapis.com/biomedical-search/assets/med_query_demo.gif)
 
 ## Project Overview
