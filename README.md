@@ -1,4 +1,4 @@
-## MedQuery - A Multimodal AI Assistant for Biomedical Research using BigQuery
+## MedQuery - A Multimodal AI Assistant for Biomedical Research
 
 The biomedical semantic search project, centered on the "nutrition and well-being" subset of the PMC Open Access dataset, is a showcase of the power of BigQuery's generative AI and multimodal capabilities.
 
