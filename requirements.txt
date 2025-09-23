@@ -1,0 +1,13 @@
+# For running the preprocessing Python script, Jupyter notebook and interacting with Google Cloud
+bigframes[pandas,gbq]
+google-cloud-aiplatform
+google-cloud-storage
+pandas
+requests
+PyMuPDF
+streamlit
+
+# For running the notebook in VS Code or a standard Jupyter server
+
+# For running the notebook in VS Code or a standard Jupyter server
+ipykernel
