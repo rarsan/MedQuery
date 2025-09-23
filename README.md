@@ -1,10 +1,14 @@
-## MedQuery - A Biomedical AI Research Assistant using Gemini & BigQuery
+## MedQuery - A Multimodal AI Assistant for Biomedical Research using BigQuery
 
-The biomedical semantic search project, centered on the "nutrition and well-being" subset of the PMC Open Access dataset, is an exceptional showcase for the power of BigQuery's generative AI and multimodal capabilities.
+The biomedical semantic search project, centered on the "nutrition and well-being" subset of the PMC Open Access dataset, is a showcase of the power of BigQuery's generative AI and multimodal capabilities.
 
 ![Architecture Diagram](assets/arch_diagram.png)
 
-By building a Retrieval-Augmented Generation (RAG) pipeline, your project will transform a simple search engine into a dynamic knowledge synthesis tool. Instead of just listing articles that contain a few keywords, it will find content based on semantic meaning and then synthesize the information into a concise, easy-to-understand answer. This is fundamentally different from a traditional system like PubMed, which is primarily based on keyword matching and Boolean logic.
+### Problem Statement
+With over a million new articles published annually, the biomedical literature has become a vast, unmanageable sea of information. Critical data—from clinical trial results in tables to survival curves in charts—remains locked within visual formats, inaccessible to traditional keyword search and even modern text-only RAG systems. These systems rely on Optical Character Recognition (OCR), which struggles with the complex layouts of scientific papers, leading to missed information and flawed analysis. As a result, researchers and clinicians waste valuable time and risk overlooking crucial evidence. This project directly confronts this bottleneck by treating entire document pages as images, creating a multimodal understanding that bridges the gap between textual content and visual data, thereby accelerating research and improving evidence-based practice.
+
+### Impact Statement
+MedQuery directly addresses this by providing a multimodal, semantic search platform for biomedical literature. By processing entire document pages as images and using a Gemini-powered RAG pipeline, the system unlocks data previously trapped in visuals and understands the conceptual intent of user queries. This leads to more accurate retrieval, richer context for AI-generated summaries, and a significant reduction in the time researchers spend searching for information, thereby accelerating the pace of both scientific discovery as well as information dissemination to the general public.
 
 This project serves as a comprehensive blueprint that touches on all three pillars of the [BigQuery AI Hackathon](https://www.kaggle.com/competitions/bigquery-ai-hackathon/overview/):
 
@@ -35,7 +39,7 @@ This project overcomes these limitations by adopting a **multimodal embedding st
 By using multimodal embeddings, we create a search system that is far more powerful and intuitive for biomedical researchers:
 
 *   **Improved Retrieval Accuracy:** The vector search becomes significantly more accurate. It can now match a user's query to the conceptual meaning of a chart, table, or diagram, returning more relevant pages that a text-only search would miss. A researcher can ask, "Which studies show a significant improvement in patient survival?" and the system can retrieve pages containing survival curve charts, even if the exact query text isn't present.
-*   **Enhanced RAG Performance:** The benefits extend directly to the downstream Retrieval-Augmented Generation (RAG) pipeline. Because the retrieval step can pull back pages with relevant visuals, these images can be passed directly as context to a multimodal LLM (like Gemini). This gives the LLM richer, more accurate information to synthesize its final answer, allowing it to cite data and trends directly from the visual evidence in the articles.
+*   **Enhanced RAG Performance:** The benefits extend directly to the downstream Retrieval-Augmented Generation (RAG) pipeline. Because the retrieval step can pull back pages with relevant visuals, these images can be passed directly as context to a multimodal LLM like Gemini. This gives the LLM richer, more accurate information to synthesize its final answer, allowing it to cite data and trends directly from the visual evidence in the articles.
 *   **Unlocking "Hidden" Data:** This approach effectively unlocks the data previously trapped in visual formats, making it fully searchable and usable by the AI.
 *   **Resilience to OCR Failures:** By treating the page as an image, we bypass the most common OCR failure points. The model can interpret the content of a table or figure directly from the pixels, even if the text is too small or the layout too complex for traditional OCR.
 
