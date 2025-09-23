@@ -8,7 +8,7 @@ By building a Retrieval-Augmented Generation (RAG) pipeline, your project will t
 
 This project serves as a comprehensive blueprint that touches on all three pillars of the [BigQuery AI Hackathon](https://www.kaggle.com/competitions/bigquery-ai-hackathon/overview/):
 
-1.  **The Multimodal Pioneer 🖼️**: We begin by treating entire PDF pages as images, creating a structured interface over unstructured files in Cloud Storage (similar to **Object Tables**). This allows us to work with visual data natively within the BigQuery ecosystem.
+1.  **The Multimodal Pioneer 🖼️**: We begin by treating entire PDF pages as images, creating a structured interface over unstructured files in Cloud Storage using **Multimodal BigFrames** and **BlobAccessor** functions. This allows us to work with visual data natively within the BigQuery ecosystem.
 
 2.  **The Semantic Detective 🕵️‍♀️**: Using BigFrames, we generate powerful vector representations of each page with a `MultimodalEmbeddingGenerator` (which leverages **`ML.GENERATE_EMBEDDING`**). To ensure high-performance retrieval, we then build a **`VECTOR_INDEX`** and use **`vector_search`** to find the most semantically and visually relevant pages for a user's query.
 
@@ -163,4 +163,5 @@ Search for "human nutritional health" leveraging the power of Medical Subject He
 
 ## References
 [1] VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents. https://arxiv.org/abs/2410.10594
+
 [2] ColPali: Efficient Document Retrieval with Vision Language Models. https://arxiv.org/abs/2407.01449
