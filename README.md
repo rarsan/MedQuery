@@ -4,11 +4,14 @@ The biomedical semantic search project, centered on the "nutrition and well-bein
 
 ![Architecture Diagram](assets/arch_diagram.png)
 
-### Problem Statement
-With over a million new articles published annually, the biomedical literature has become a vast, unmanageable sea of information. Critical data—from clinical trial results in tables to survival curves in charts—remains locked within visual formats, inaccessible to traditional keyword search and even modern text-only RAG systems. These systems rely on Optical Character Recognition (OCR), which struggles with the complex layouts of scientific papers, leading to missed information and flawed analysis. As a result, researchers and clinicians waste valuable time and risk overlooking crucial evidence. This project directly confronts this bottleneck by treating entire document pages as images, creating a multimodal understanding that bridges the gap between textual content and visual data, thereby accelerating research and improving evidence-based practice.
+## Problem Statement
 
-### Impact Statement
-MedQuery directly addresses this by providing a multimodal, semantic search platform for biomedical literature. By processing entire document pages as images and using a Gemini-powered RAG pipeline, the system unlocks data previously trapped in visuals and understands the conceptual intent of user queries. This leads to more accurate retrieval, richer context for AI-generated summaries, and a significant reduction in the time researchers spend searching for information, thereby accelerating the pace of both scientific discovery as well as information dissemination to the general public.
+With over a million new articles published annually, the biomedical literature has created a deluge of information that overwhelms readers and researchers alike. Adding to this challenge is the proliferation of misinformation, which obscures scientifically-backed findings and hinders informed decision-making by elected officials and the general population. Critical data—from clinical trial results in tables to survival curves in charts—remains locked within visual formats, inaccessible to traditional keyword search and even modern text-only RAG systems. These systems rely on Optical Character Recognition (OCR), which struggles with the complex layouts of scientific papers, leading to missed information and flawed analysis. As a result, researchers and clinicians waste valuable time and risk overlooking crucial evidence, while the spread of disinformation further complicates the challenge of accessing and applying reliable knowledge.
+
+## Impact Statement
+
+MedQuery directly addresses this by providing a comprehensive multimodal semantic search platform for biomedical literature, by treating entire document pages as images. By processing entire document pages as images and using a scalable and cost-effective data & AI pipeline on BigQuery, the system unlocks data previously trapped in visuals, understands the conceptual intent of user queries, and make the scientific evidence readily accessible and usable by everyone. This leads to more accurate retrieval, richer context for AI-generated grounded summaries, and a significant reduction in the time researchers spend searching for information, thereby accelerating the pace of research, scientific discovery, evidence-based practice and information dissemination to the general public.
+
 
 This project serves as a comprehensive blueprint that touches on all three pillars of the [BigQuery AI Hackathon](https://www.kaggle.com/competitions/bigquery-ai-hackathon/overview/):
 
