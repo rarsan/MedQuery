@@ -179,6 +179,12 @@ Search for "human nutritional health" leveraging the power of Medical Subject He
 "has pdf"[filter] AND "Diet, Food, and Nutrition"[mh] AND ("Public Health"[mh] OR "Health Status"[mh] OR "Disease"[mh] OR "Exercise"[mh]) NOT "Animal Nutritional Physiological Phenomena"[mh]
 ```
 
+While MeSH tags are preferred, here's an alternative keyword-only based query:
+
+```
+"has pdf"[filter] AND (nutrition[tiab] OR diet[tiab] OR food[tiab]) AND ("public health"[tiab] OR wellness[tiab] OR disease[tiab] OR exercise[tiab] )
+```
+
 ## References
 [1] VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents. https://arxiv.org/abs/2410.10594
 
