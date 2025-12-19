@@ -71,7 +71,7 @@ This architecture outlines a comprehensive pipeline for ingesting, processing, a
 
 **2. RAG Pipeline: Document Processing and Embedding in BigQuery:**
 *   **Document Splitting (Cloud Run):** To prepare for semantic search, a remote function (deployed in Cloud Run and triggered via BigQuery DataFrames) processes each article's PDF. It splits the multi-page documents into single-page PNG images and PDFs, allowing for page-level multimodal analysis of both text and visual elements. These assets are stored back into Cloud Storage. All pages metadata and corresponding Cloud Storage URIs are loaded in a **BigQuery** table `pages`.
-![PDF articles are split into single-page PDFs and PNGs for multimodal analysis](assets/pdf_articles_split_into_pages.png)
+![PDF articles are split into single-page PDFs and PNGs for multimodal analysis](assets/gcs_pdf_articles_split_into_pages.png)
 *   **Embedding Generation (Vertex AI):** Using BigQuery DataFrames (`bigframes`), the embedding generation happs directly on the GCS objects without manual data movement or complex access control. The **Vertex AI Multimodal Embedding model** is used to create vector embeddings of each document page. This model processes the visual (PNG) content of the page to generate a rich semantic embedding. It captures charts, images, graphs and not only text.
 *   **Vector Indexing (BigQuery Vector Search):** The generated embeddings are loaded into a **BigQuery** table `pages_embeddings` and indexed using **BigQuery Vector Search**. This creates a scalable and efficient index for performing similarity searches.
 
